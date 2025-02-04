@@ -1,40 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jou-Chih Chang's Projects</title>
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Projects</h1>
-            <nav>
-                <div class="nav-links">
-                    <a href="home.html">Home</a>|
-                    <a href="about.html">About</a>|
-                    <a href="projects.html">Projects</a>|
-                    <a href="contact.html">Contact</a>
-                </div>
-            </nav>
-        </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jou-Chih Chang's Projects</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Projects</h1>
+      <nav>
+        <search>
+          <input type="search" name="query" placeholder="Search my site..." />
+          <button type="submit">Search</button>
+        </search>
+        <div class="nav-links">
+          <a href="home.html">Home</a> | <a href="about.html">About</a> |
+          <a href="projects.html">Projects</a> |
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-        <main class="profile-container">
-            <div class="profile-info">
-                <h1>Jou-Chih Chang</h1>
-                <p>I am a software development engineer located in San Diego.</p>
-                <div class="profile-image">
-                    <img src="assets/profile.jpg" alt="Jou-Chih Chang">
-                </div>
-                <p class="handle">@socialmediaplatform</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/"><img src="assets/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>&copy; 2025 My Portfolio</p>
-        </footer>
-    </body>
+    <main>
+      <h2>Project Examples</h2>
+      <details>
+        <summary>Simple Python Script</summary>
+        <p>
+          To print a message in Python, use:
+          <code>print("Hello, World!")</code>
+        </p>
+      </details>
+
+      <details>
+        <summary>Python Function</summary>
+        <p>Define a function in Python:</p>
+        <pre>
+      def hello():
+          print("Hello, World!")
+          </pre
+        >
+      </details>
+
+      <dialog id="projectDialog">
+        <h2>Project Explanation</h2>
+        <p>Both examples are used to print "Hello, World!" in the terminal.</p>
+        <p>Using <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text in a terminal.</p>
+        <button onclick="document.getElementById('projectDialog').close();">
+          Close
+        </button>
+      </dialog>
+      <button onclick="document.getElementById('projectDialog').showModal();">
+        View More
+      </button>
+    </main>
+
+    <footer>
+      <p class="handle">@socialmediaplatform</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/iiiiiirrrrrriiiiiissssss/">
+          <img src="assets/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/in/jou-chih-chang-185962296/">
+          <img src="assets/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+      <p>&copy; <del>2024</del> <ins>2025</ins> By Jou-Chih Chang</p>
+      <noscript>
+        <p>JavaScript is disabled. Some features may not work correctly.</p>
+      </noscript>
+    </footer>
+  </body>
 </html>
