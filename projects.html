@@ -37,6 +37,19 @@
         </p>
       </details>
 
+      <hello-world></hello-world>
+
+      <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world!");
+            }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+      </script>
+
       <details>
         <summary>Python Function</summary>
         <p>Define a function in Python:</p>
