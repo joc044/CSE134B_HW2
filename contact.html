@@ -27,12 +27,12 @@
     </header>
 
     <main class="contact-container">
-      <section class="video">
+      <div class="video">
         <video autoplay playsinline width="600">
           <source src="assets/sunset.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </section>
+      </div>
 
       <section class="contact-info">
         <h2>Personal Information</h2>
@@ -51,7 +51,7 @@
         </address>
       </section>
 
-      <section class="contact-form">
+      <div class="contact-form">
         <form action="#" method="POST">
           <fieldset>
             <legend>Visitor Information</legend>
@@ -68,8 +68,7 @@
               id="countryCode"
               name="countryCode"
               placeholder="+1"
-              pattern="\+?[0-9]+"
-            />
+              pattern="\+?[0-9]+">
             <datalist id="countryCodes">
               <option value="+1">United States/Canada</option>
               <option value="+886">Taiwan</option>
@@ -90,8 +89,7 @@
               id="phoneNumber"
               name="phoneNumber"
               placeholder="1234567890"
-              pattern="[0-9\s\-]+"
-            />
+              pattern="[0-9\s\-]+">
 
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" required>
@@ -117,10 +115,10 @@
 
           <button type="submit">Submit</button>
         </form>
-      </section>
+      </div>
     </main>
 
-    <hr />
+    <hr>
 
     <footer>
       <p class="handle">@socialmediaplatform</p>
